@@ -1,0 +1,45 @@
+:root {
+  --sky: #8cc6f2;
+  --grass: #7fae4f;
+  --cream: #fff4dc;
+  --brown: #5c3820;
+  --wood: #8c5733;
+  --yellow: #f6c33a;
+  --ink: #2b1d14;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background: linear-gradient(var(--sky) 0, #cfe8fb 320px, var(--grass) 320px, #6f9e43 100%);
+  min-height: 100vh;
+}
+a { color: var(--wood); }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 16px 48px; }
+header { text-align: center; padding: 40px 0 24px; }
+header img.icon { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 8px 0 rgba(0,0,0,.18); }
+h1 {
+  font-size: clamp(40px, 9vw, 72px); margin: 16px 0 4px; color: var(--yellow);
+  -webkit-text-stroke: 3px var(--brown); paint-order: stroke fill; text-shadow: 0 5px 0 var(--brown);
+  letter-spacing: .5px;
+}
+.tag { font-size: 20px; font-weight: 700; color: var(--brown); margin: 8px 0 0; }
+.card {
+  background: var(--cream); border: 6px solid var(--wood); border-radius: 28px;
+  padding: 24px; margin: 24px 0; box-shadow: 0 10px 0 rgba(0,0,0,.18);
+}
+.card h2 { margin-top: 0; color: var(--brown); }
+.shots { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 8px 0 0; }
+.shots img { width: min(260px, 44vw); border-radius: 24px; border: 5px solid var(--ink); box-shadow: 0 8px 0 rgba(0,0,0,.2); }
+ul.features { padding-left: 20px; line-height: 1.6; }
+.btn {
+  display: inline-block; background: #5cbf4a; color: #fff; text-decoration: none; font-weight: 800;
+  padding: 14px 26px; border-radius: 20px; box-shadow: 0 6px 0 #3c8a2f; margin: 8px 6px;
+}
+.btn.alt { background: var(--wood); box-shadow: 0 6px 0 #5e3a20; }
+footer { text-align: center; color: var(--cream); font-weight: 700; padding: 16px; }
+footer a { color: var(--cream); }
+.legal { line-height: 1.6; }
+.legal h2 { font-size: 20px; margin-top: 28px; }
